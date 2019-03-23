@@ -34,6 +34,7 @@ IMPORTANT: CloudForms must be running with a database region configured
 * Download the installation playbook
 
  curl -O https://raw.githubusercontent.com/ramrexx/CloudForms_Essentials/master/cloudforms_essentials_install.yml
+ 
 
 * Execute the installation playbook
 
@@ -57,6 +58,8 @@ IMPORTANT: CloudForms must be running with a database region configured
 * Log into your CloudForms appliance and make sure you are in roots home directory
 
 * Execute the installation playbook in offline mode
+ wget https://github.com/learnmiq/ManageIQ_Essentials/archive/master.zip
+ wget https://github.com/rhtconsulting/cfme-rhconsulting-scripts/archive/master.zip
 
  ansible-playbook cloudforms_essentials_install.yml -v -e "offline=true"
 
